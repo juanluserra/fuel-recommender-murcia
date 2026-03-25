@@ -1,0 +1,12 @@
+{
+  "scopes": [
+    {
+      "scope_id": "alcantarilla_murcia",
+      "municipality": "Alcantarilla",
+      "province": "Murcia",
+      "municipality_id": null,
+      "history_dir": "data/history/alcantarilla_murcia",
+      "db_path": "data/db/alcantarilla_murcia.db"
+    }
+  ]
+}

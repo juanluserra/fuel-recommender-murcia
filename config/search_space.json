@@ -1,0 +1,20 @@
+{
+  "default_horizon_candidates": [3, 5, 7, 10, 14],
+  "default_waiting_cost_candidates": [0.001, 0.002, 0.003, 0.005, 0.008],
+  "fuel_search_spaces": {
+    "precio_gasoleo_a": {
+      "horizon_candidates": [3, 5, 7, 10, 14],
+      "waiting_cost_candidates": [0.001, 0.002, 0.003, 0.005, 0.008]
+    },
+    "precio_gasolina_95_e5": {
+      "horizon_candidates": [3, 5, 7, 10, 14],
+      "waiting_cost_candidates": [0.001, 0.002, 0.003, 0.005, 0.008]
+    }
+  },
+  "rolling": {
+    "min_train_days": 730,
+    "test_window_days": 30,
+    "step_days": 30,
+    "max_folds": 12
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "promote_if": {
+    "share_wait_between": [0.1, 0.6],
+    "min_relative_gain_saving": 0.05,
+    "max_accuracy_drop": 0.02
+  }
+}

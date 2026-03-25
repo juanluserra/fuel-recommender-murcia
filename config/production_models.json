@@ -1,0 +1,14 @@
+{
+  "models": [
+    {
+      "scope_id": "alcantarilla_murcia",
+      "fuel_col": "precio_gasoleo_a",
+      "horizon_days": 3,
+      "waiting_cost": 0.001,
+      "selected_on": "2026-03-24",
+      "selection_method": "rolling_backtest",
+      "version": "v1",
+      "notes": "Chosen from current rolling_summary as the most stable operational default."
+    }
+  ]
+}

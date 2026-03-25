@@ -1,0 +1,6 @@
+horizon_days,error
+3,"AttributeError(""'builtin_function_or_method' object has no attribute 'perf_counter'"")"
+5,"AttributeError(""'builtin_function_or_method' object has no attribute 'perf_counter'"")"
+7,"AttributeError(""'builtin_function_or_method' object has no attribute 'perf_counter'"")"
+10,"AttributeError(""'builtin_function_or_method' object has no attribute 'perf_counter'"")"
+14,"AttributeError(""'builtin_function_or_method' object has no attribute 'perf_counter'"")"

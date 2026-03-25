@@ -1,0 +1,26 @@
+{
+  "scope_id": "alcantarilla_murcia",
+  "municipality": "Alcantarilla",
+  "province": "Murcia",
+  "fuel_col": "precio_gasoleo_a",
+  "model": {
+    "horizon_days": 3,
+    "waiting_cost": 0.001,
+    "selected_on": "2026-03-24",
+    "selection_method": "rolling_backtest",
+    "version": "v1"
+  },
+  "generated_at": "2026-03-25T08:11:38.063637+00:00",
+  "summary": {
+    "recommendation": "buy_now",
+    "n_stations": 13,
+    "n_buy_now": 11,
+    "n_wait": 2,
+    "selected_station_id": "13562",
+    "selected_station_price": 1.639,
+    "cheapest_station_id": "13562",
+    "cheapest_station_price": 1.639
+  },
+  "stations": [
+    {
+      "date": 
