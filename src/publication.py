@@ -2,11 +2,67 @@ from __future__ import annotations
 
 import html
 import json
-from datetime import datetime, timezone
+import math
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
 import pandas as pd
+
+try:
+    import numpy as np
+except Exception:  # pragma: no cover
+    np = None
+
+
+def _to_jsonable(value: Any) -> Any:
+    """
+    Convert common pandas/numpy/python values to JSON-serializable values.
+
+    Handles:
+    - pandas.Timestamp / datetime / date -> ISO 8601 string
+    - pandas.NA / NaN / NaT -> None
+    - numpy scalars -> native Python scalars
+    - dict / list / tuple / set -> recursively converted containers
+    """
+    if value is None:
+        return None
+
+    # Containers first
+    if isinstance(value, dict):
+        return {str(k): _to_jsonable(v) for k, v in value.items()}
+    if isinstance(value, (list, tuple, set)):
+        return [_to_jsonable(v) for v in value]
+
+    # Datetime-like
+    if isinstance(value, pd.Timestamp):
+        if pd.isna(value):
+            return None
+        return value.isoformat()
+    if isinstance(value, (datetime, date)):
+        return value.isoformat()
+
+    # Pandas missing scalars / generic missing values
+    try:
+        if pd.isna(value):
+            return None
+    except Exception:
+        pass
+
+    # numpy scalars
+    if np is not None:
+        if isinstance(value, np.generic):
+            return value.item()
+        if isinstance(value, np.ndarray):
+            return [_to_jsonable(v) for v in value.tolist()]
+
+    # plain floats with non-finite values
+    if isinstance(value, float):
+        if math.isnan(value) or math.isinf(value):
+            return None
+        return value
+
+    return value
 
 
 def build_scope_payload(
@@ -68,8 +124,9 @@ def build_scope_payload(
 def write_scope_payload(path: str | Path, payload: dict[str, Any]) -> str:
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
+    serializable_payload = _to_jsonable(payload)
     with path.open("w", encoding="utf-8") as fh:
-        json.dump(payload, fh, ensure_ascii=False, indent=2)
+        json.dump(serializable_payload, fh, ensure_ascii=False, indent=2)
     return str(path)
 
 
