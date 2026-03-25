@@ -1,0 +1,62 @@
+name: daily-train-and-publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope_id:
+        description: Scope to run
+        required: false
+        default: alcantarilla_murcia
+      fuel_col:
+        description: Fuel column
+        required: false
+        default: precio_gasoleo_a
+      target_date:
+        description: Target date (YYYY-MM-DD)
+        required: false
+        default: ""
+  schedule:
+    - cron: "17 4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run daily pipeline
+        run: |
+          TARGET_DATE="${{ github.event.inputs.target_date }}"
+          if [ -z "$TARGET_DATE" ]; then
+            TARGET_DATE=$(date -u +%F)
+          fi
+          python scripts/daily_run.py \
+            --scope-id "${{ github.event.inputs.scope_id || 'alcantarilla_murcia' }}" \
+            --fuel-col "${{ github.event.inputs.fuel_col || 'precio_gasoleo_a' }}" \
+            --target-date "$TARGET_DATE"
+
+      - name: Commit updated history and public outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history data/latest public
+          if git diff --cached --quiet; then
+            echo "No hay cambios para commitear"
+          else
+            git commit -m "chore: daily model update $(date -u +%F)"
+            git push
+          fi
