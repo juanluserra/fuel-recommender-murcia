@@ -60,3 +60,7 @@ jobs:
             git commit -m "chore: daily model update $(date -u +%F)"
             git push
           fi
+      - name: Notify bot backend
+        run: |
+          curl -X POST "${{ secrets.BOT_BACKEND_URL }}/internal/pull-latest" \
+          -H "Authorization: Bearer ${{ secrets.BOT_INTERNAL_API_TOKEN }}"
