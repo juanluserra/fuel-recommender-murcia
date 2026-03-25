@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-25T08:38:18.357724+00:00",
+  "generated_at": "2026-03-25T15:02:02.936792+00:00",
   "items": [
     {
       "scope_id": "alcantarilla_murcia",
@@ -13,7 +13,7 @@
         "selection_method": "rolling_backtest",
         "version": "v1"
       },
-      "generated_at": "2026-03-25T08:38:18.356498+00:00",
+      "generated_at": "2026-03-25T15:02:02.935670+00:00",
       "summary": {
         "recommendation": "buy_now",
         "n_stations": 13,
