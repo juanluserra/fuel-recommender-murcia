@@ -10,7 +10,7 @@
     "selection_method": "rolling_backtest",
     "version": "v1"
   },
-  "generated_at": "2026-05-09T06:31:53.379135+00:00",
+  "generated_at": "2026-05-10T06:50:11.866688+00:00",
   "summary": {
     "recommendation": "wait",
     "n_stations": 13,
@@ -23,7 +23,7 @@
   },
   "stations": [
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "15366",
       "price": 1.539,
       "regime": "cyclical",
@@ -37,7 +37,7 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "13562",
       "price": 1.579,
       "regime": "cyclical",
@@ -51,7 +51,7 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "14016",
       "price": 1.609,
       "regime": "cyclical",
@@ -65,11 +65,11 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "14084",
-      "price": 1.645,
+      "price": 1.635,
       "regime": "cyclical",
-      "pred_q20": 1.3770844235942865,
+      "pred_q20": 1.3763988690137867,
       "pred_q50": 1.4443400692758848,
       "pred_q80": 1.4644963691274666,
       "target_min_3d": null,
@@ -79,7 +79,7 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "13973",
       "price": 1.649,
       "regime": "cyclical",
@@ -93,7 +93,7 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "15740",
       "price": 1.649,
       "regime": "cyclical",
@@ -107,7 +107,7 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "16398",
       "price": 1.649,
       "regime": "cyclical",
@@ -121,7 +121,7 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "15390",
       "price": 1.65,
       "regime": "cyclical",
@@ -135,7 +135,7 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "4188",
       "price": 1.719,
       "regime": "cyclical",
@@ -149,21 +149,7 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
-      "station_id": "2132",
-      "price": 1.735,
-      "regime": "cyclical",
-      "pred_q20": 1.3858915725128087,
-      "pred_q50": 1.4653040804841695,
-      "pred_q80": 1.4904654872045342,
-      "target_min_3d": null,
-      "decision": "wait",
-      "realized_wait_gain": null,
-      "policy_realized_saving": null,
-      "oracle_best_action": "buy_now"
-    },
-    {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "4157",
       "price": 1.739,
       "regime": "cyclical",
@@ -177,7 +163,7 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
       "station_id": "10945",
       "price": 1.752,
       "regime": "cyclical",
@@ -191,7 +177,21 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-05-09T00:00:00",
+      "date": "2026-05-10T00:00:00",
+      "station_id": "2132",
+      "price": 1.755,
+      "regime": "cyclical",
+      "pred_q20": 1.3858915725128087,
+      "pred_q50": 1.4819961902188512,
+      "pred_q80": 1.4904654872045342,
+      "target_min_3d": null,
+      "decision": "wait",
+      "realized_wait_gain": null,
+      "policy_realized_saving": null,
+      "oracle_best_action": "buy_now"
+    },
+    {
+      "date": "2026-05-10T00:00:00",
       "station_id": "4232",
       "price": 1.799,
       "regime": "cyclical",
