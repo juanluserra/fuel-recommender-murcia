@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T11:21:22.604546+00:00",
+  "generated_at": "2026-10-07T11:08:50.749915+00:00",
   "items": [
     {
       "scope_id": "alcantarilla_murcia",
@@ -13,7 +13,7 @@
         "selection_method": "rolling_backtest",
         "version": "v1"
       },
-      "generated_at": "2026-10-06T11:21:22.602799+00:00",
+      "generated_at": "2026-10-07T11:08:50.749049+00:00",
       "summary": {
         "recommendation": "wait",
         "n_stations": 13,
@@ -26,7 +26,7 @@
       },
       "stations": [
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "15390",
           "price": 1.7,
           "regime": "stable",
@@ -40,13 +40,13 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "15366",
-          "price": 1.749,
+          "price": 1.719,
           "regime": "stable",
-          "pred_q20": 1.4523271389471613,
-          "pred_q50": 1.664549009735337,
-          "pred_q80": 1.7302760918459823,
+          "pred_q20": 1.4522880815419192,
+          "pred_q50": 1.6652293108560285,
+          "pred_q80": 1.6714764652391716,
           "target_min_3d": null,
           "decision": "wait",
           "realized_wait_gain": null,
@@ -54,13 +54,13 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "13562",
-          "price": 1.759,
+          "price": 1.729,
           "regime": "stable",
           "pred_q20": 1.4522953575181599,
-          "pred_q50": 1.6646436078844733,
-          "pred_q80": 1.7300798486143631,
+          "pred_q50": 1.6646602950380354,
+          "pred_q80": 1.6712802220075524,
           "target_min_3d": null,
           "decision": "wait",
           "realized_wait_gain": null,
@@ -68,7 +68,7 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "14016",
           "price": 1.789,
           "regime": "stable",
@@ -82,7 +82,7 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "14084",
           "price": 1.815,
           "regime": "stable",
@@ -96,7 +96,7 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "13973",
           "price": 1.819,
           "regime": "stable",
@@ -110,7 +110,7 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "15740",
           "price": 1.819,
           "regime": "stable",
@@ -124,7 +124,7 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "16398",
           "price": 1.819,
           "regime": "stable",
@@ -138,7 +138,7 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "10945",
           "price": 1.944,
           "regime": "stable",
@@ -152,7 +152,7 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "4188",
           "price": 1.949,
           "regime": "stable",
@@ -166,7 +166,7 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "4157",
           "price": 1.969,
           "regime": "stable",
@@ -180,7 +180,7 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "4232",
           "price": 1.969,
           "regime": "stable",
@@ -194,9 +194,9 @@
           "oracle_best_action": "buy_now"
         },
         {
-          "date": "2026-10-06T00:00:00",
+          "date": "2026-10-07T00:00:00",
           "station_id": "2132",
-          "price": 1.989,
+          "price": 1.979,
           "regime": "stable",
           "pred_q20": 1.463177020583076,
           "pred_q50": 1.7600635225974692,
