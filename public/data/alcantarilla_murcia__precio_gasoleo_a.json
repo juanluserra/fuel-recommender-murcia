@@ -10,7 +10,7 @@
     "selection_method": "rolling_backtest",
     "version": "v1"
   },
-  "generated_at": "2026-11-01T11:21:23.231635+00:00",
+  "generated_at": "2026-11-02T12:31:32.721628+00:00",
   "summary": {
     "recommendation": "wait",
     "n_stations": 13,
@@ -23,11 +23,11 @@
   },
   "stations": [
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "13562",
       "price": 1.749,
       "regime": "stable",
-      "pred_q20": 1.4536635788915722,
+      "pred_q20": 1.4535101293427481,
       "pred_q50": 1.6436424581280011,
       "pred_q80": 1.701108195987696,
       "target_min_3d": null,
@@ -37,11 +37,11 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "15366",
       "price": 1.749,
       "regime": "stable",
-      "pred_q20": 1.453767638037523,
+      "pred_q20": 1.453614188488699,
       "pred_q50": 1.643673384735337,
       "pred_q80": 1.701108195987696,
       "target_min_3d": null,
@@ -51,11 +51,11 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "15390",
       "price": 1.75,
       "regime": "stable",
-      "pred_q20": 1.451978955614632,
+      "pred_q20": 1.451825506065808,
       "pred_q50": 1.6525514094918092,
       "pred_q80": 1.7009100308028844,
       "target_min_3d": null,
@@ -65,11 +65,11 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "14016",
       "price": 1.779,
       "regime": "stable",
-      "pred_q20": 1.451978955614632,
+      "pred_q20": 1.451825506065808,
       "pred_q50": 1.6786434540619721,
       "pred_q80": 1.732428154375108,
       "target_min_3d": null,
@@ -79,12 +79,12 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "13973",
       "price": 1.799,
       "regime": "stable",
-      "pred_q20": 1.451978955614632,
-      "pred_q50": 1.6786717492433125,
+      "pred_q20": 1.451825506065808,
+      "pred_q50": 1.6787076882477232,
       "pred_q80": 1.732584297529441,
       "target_min_3d": null,
       "decision": "wait",
@@ -93,12 +93,12 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "14084",
       "price": 1.799,
       "regime": "stable",
-      "pred_q20": 1.451503582451009,
-      "pred_q50": 1.6786717492433125,
+      "pred_q20": 1.451350132902185,
+      "pred_q50": 1.6787076882477232,
       "pred_q80": 1.732584297529441,
       "target_min_3d": null,
       "decision": "wait",
@@ -107,12 +107,12 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "15740",
       "price": 1.799,
       "regime": "stable",
-      "pred_q20": 1.4519066778976826,
-      "pred_q50": 1.6786717492433125,
+      "pred_q20": 1.4517532283488586,
+      "pred_q50": 1.6787076882477232,
       "pred_q80": 1.7325825680028166,
       "target_min_3d": null,
       "decision": "wait",
@@ -121,12 +121,12 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "16398",
       "price": 1.799,
       "regime": "stable",
-      "pred_q20": 1.4519066778976826,
-      "pred_q50": 1.6786717492433125,
+      "pred_q20": 1.4517532283488586,
+      "pred_q50": 1.6787076882477232,
       "pred_q80": 1.7325825680028166,
       "target_min_3d": null,
       "decision": "wait",
@@ -135,12 +135,12 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "4188",
       "price": 1.949,
       "regime": "stable",
       "pred_q20": 1.4620390611309084,
-      "pred_q50": 1.7480691308559548,
+      "pred_q50": 1.748105069860365,
       "pred_q80": 1.8064440198078495,
       "target_min_3d": null,
       "decision": "wait",
@@ -149,12 +149,12 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "10945",
-      "price": 1.969,
+      "price": 1.959,
       "regime": "stable",
       "pred_q20": 1.4632565595335971,
-      "pred_q50": 1.7480691308559548,
+      "pred_q50": 1.7478860702108572,
       "pred_q80": 1.8064440198078495,
       "target_min_3d": null,
       "decision": "wait",
@@ -163,12 +163,12 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "2132",
       "price": 1.969,
       "regime": "stable",
       "pred_q20": 1.462828837250547,
-      "pred_q50": 1.7479165568463217,
+      "pred_q50": 1.747952495850732,
       "pred_q80": 1.8064457493344739,
       "target_min_3d": null,
       "decision": "wait",
@@ -177,12 +177,12 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "4157",
       "price": 1.969,
       "regime": "stable",
       "pred_q20": 1.461141936780195,
-      "pred_q50": 1.7480691308559548,
+      "pred_q50": 1.748105069860365,
       "pred_q80": 1.8064440198078495,
       "target_min_3d": null,
       "decision": "wait",
@@ -191,12 +191,12 @@
       "oracle_best_action": "buy_now"
     },
     {
-      "date": "2026-11-01T00:00:00",
+      "date": "2026-11-02T00:00:00",
       "station_id": "4232",
       "price": 1.969,
       "regime": "stable",
       "pred_q20": 1.4632565595335971,
-      "pred_q50": 1.747850131206447,
+      "pred_q50": 1.7478860702108572,
       "pred_q80": 1.8064440198078495,
       "target_min_3d": null,
       "decision": "wait",
